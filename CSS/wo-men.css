@@ -156,24 +156,31 @@
         }
 
         footer {
-            background:#222;
-            color:#fff;
+            background:white;
+            color:#000000;
             padding:1.5rem 0;
             text-align:center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
             margin-top:3rem;
         }
 
-        .social-links {
-            margin-bottom:0.5rem;
-            font-size:1.1rem;
+        .footer-logo {
+            font-size: 1.7rem;
+            font-family: "Acne Studios Circle Test Light";
+            margin-bottom: 1rem;
         }
 
-        .social-links a {
-            color:#fff;
-            margin:0 0.5rem;
-            text-decoration:none;
+        .social-icon {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
         }
 
-        .social-links p{
+        .social-icon a {
+            color: #000000;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        .social-icon p {
             margin-bottom: 0px;
         }
