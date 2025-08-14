@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="CSS/cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://db.onlinewebfonts.com/c/b4d33a9577ffe56f000b4204e12b5a27?family=Acne+Studios+Circle+Test+Light" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Acne Studios</a>
+            
+                <ul class="nav-menu">
+                    <li><a href="men.html" class="nav-link">Men</a></li>
+                    <li><a href="women.html" class="nav-link">Women</a></li>
+                    <li><a href="accessory.html" class="nav-link">Accessories</a></li>
+                    <li><a href="shoes.html" class="nav-link">Shoes</a></li>
+                    <li><a href="cart.html" class="nav-link">Cart</a></li>
+                </ul>
+            <div class="nav-right">
+                <a href="login.html"><i class="ri-account-circle-line"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="cart-section">
+            <h1>Shopping Cart</h1>
+            <div class="items-count">2 Items</div>
+            
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="images/men1.png" alt="Logo Tank Top">
+                </div>
+                <div class="item-details">
+                    <div class="item-name">Logo Tank Top</div>
+                </div>
+                <div class="quantity-controls">
+                    <button class="qty-btn" onclick="decreaseQuantity()">−</button>
+                    <span class="quantity" id="quantity">1</span>
+                    <button class="qty-btn" onclick="increaseQuantity()">+</button>
+                </div>
+                <div class="item-price" id="itemPrice">$280.00</div>
+                <button class="remove-btn" onclick="removeItem()">×</button>
+            </div>
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="images/men2.png" alt="Sweatpants">
+                </div>
+                <div class="item-details">
+                    <div class="item-name">Sweatpants</div>
+                </div>
+                <div class="quantity-controls">
+                    <button class="qty-btn" onclick="decreaseQuantity()">−</button>
+                    <span class="quantity" id="quantity">1</span>
+                    <button class="qty-btn" onclick="increaseQuantity()">+</button>
+                </div>
+                <div class="item-price" id="itemPrice">$700.00</div>
+                <button class="remove-btn" onclick="removeItem()">×</button>
+            </div>
+        </div>
+        
+        <div class="summary">
+            <h2>Summary</h2>
+            
+            <div class="summary-row">
+                <span class="summary-label">ITEMS 2</span>
+                <span class="summary-value" id="itemsTotal">$980.00</span>
+            </div>
+            
+            <div class="summary-row">
+                <div>
+                    <div class="summary-label">SHIPPING</div>
+                    <div class="shipping-details">Standard Delivery - $5.00</div>
+                </div>
+                <span class="summary-value">$5.00</span>
+            </div>
+            
+            <div class="promo-section">
+                <div class="promo-label">GIVE CODE</div>
+                <input type="text" class="promo-input" placeholder="Enter your code">
+            </div>
+            
+            <div class="total-section">
+                <div class="total-price">
+                    <span class="total-label">TOTAL PRICE</span>
+                    <span class="total-value" id="totalPrice">$985.00</span>
+                </div>
+                
+                <button class="checkout-btn">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-logo">
+            Acne Studios
+        </div>
+        <div class="social-icon">
+            <a href="https://www.facebook.com/acnestudios/"><i class="ri-facebook-circle-line"></i></a>
+            <a href="https://www.instagram.com/acnestudios/"><i class="ri-instagram-line"></i></a>
+            <a href="https://x.com/acnestudios"><i class="ri-twitter-x-line"></i></a>
+        </div>
+        <p>&copy; 2025 Acne Studios. All rights reserved.</p>
+    </footer>
+</body>
+</body>
+</html>
