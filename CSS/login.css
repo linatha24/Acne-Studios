@@ -59,6 +59,15 @@
             align-items: center;
             gap: 1rem;
         }
+        .nav-right a {
+            text-decoration: none;
+        }
+        .nav-right i {
+            font-size: 1.8rem;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
         .login-container {
             min-height: 100vh;
             display: flex;
