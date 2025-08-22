@@ -145,6 +145,7 @@
             font-size: 14px;
             letter-spacing: 0.5px;
             padding: 10px 20px;
+            border-radius: 20px;
             border: 1px solid #e5e5e5;
             transition: all 0.3s ease;
             text-transform: uppercase;
