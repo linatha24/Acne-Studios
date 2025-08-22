@@ -1,0 +1,403 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Acne Studios Circle Test Light";
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        .navbar {
+                background: white;
+                padding: 1rem 0;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1000;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: "Acne Studios Circle Test Light";
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-family: "Acne Studios Circle Test Light";
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #666;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .nav-right a {
+            text-decoration: none;
+        }
+        .nav-right i {
+            font-size: 1.5rem;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 80px;
+            padding: 0 40px;
+        }
+        .page-header {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .page-subtitle {
+            font-size: 16px;
+            color: #666;
+            font-weight: 300;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Contact Section */
+        .page-header {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .page-subtitle {
+            font-size: 16px;
+            color: #666;
+            font-weight: 300;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 50px;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            margin-bottom: 80px;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 40px;
+            border-radius: 2px;
+        }
+
+        .contact-item {
+            margin-bottom: 40px;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-title {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            color: #000;
+        }
+
+        .contact-details p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .contact-details a {
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-details a:hover {
+            opacity: 0.7;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 2px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            background: #fafafa;
+            font-size: 14px;
+            color: #333;
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: #000;
+            background: white;
+        }
+
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-button {
+            background: #000;
+            color: white;
+            border: none;
+            border-radius: 24px;
+            padding: 15px 40px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .form-button:hover {
+            background: #333;
+        }
+
+        /* Store Locator */
+        .stores-section {
+            margin-bottom: 80px;
+        }
+
+        .stores-intro {
+            text-align: center;
+            margin-bottom: 60px;
+            color: #666;
+            font-size: 16px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;
+        }
+
+        .store-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .store-item {
+            background: white;
+            padding: 40px;
+            border-radius: 2px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .store-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .store-city {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: #000;
+            letter-spacing: 0.5px;
+        }
+
+        .store-address {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .store-hours {
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        .store-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .store-link {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .store-link:hover {
+            border-color: #000;
+            color: #000;
+        }
+
+        .store-link.primary {
+            background: #000;
+            color: white;
+            border-color: #000;
+        }
+
+        .store-link.primary:hover {
+            background: #333;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: white;
+            padding: 60px 40px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .cta-title {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            color: #000;
+        }
+
+        .cta-subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: transparent;
+            color: #000;
+            text-decoration: none;
+            border: 1px solid #000;
+            border-radius: 24px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .cta-button:hover {
+            background: #000;
+            color: white;
+        }
+
+        footer {
+            background:white;
+            color:#000000;
+            padding:1.5rem 0;
+            text-align:center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            margin-top:3rem;
+        }
+
+        .footer-logo {
+            font-size: 1.7rem;
+            font-family: "Acne Studios Circle Test Light";
+            margin-bottom: 1rem;
+        }
+
+        .social-icon {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .social-icon a {
+            color: #000000;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        .social-icon p {
+            margin-bottom: 0px;
+        }

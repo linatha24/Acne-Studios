@@ -1,0 +1,361 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Acne Studios Circle Test Light";
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .navbar {
+                background: white;
+                padding: 1rem 0;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1000;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: "Acne Studios Circle Test Light";
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-family: "Acne Studios Circle Test Light";
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #666;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .nav-right a {
+            text-decoration: none;
+        }
+        .nav-right i {
+            font-size: 1.5rem;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            margin-top: 80px;
+        }
+        .page-header {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .page-subtitle {
+            font-size: 20px;
+            color: #666;
+            font-weight: 300;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Search Bar */
+        .faq-search {
+            max-width: 500px;
+            margin: 0 auto 60px;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            border: 1px solid #ddd;
+            background: white;
+            font-size: 16px;
+            color: #333;
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #000;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            color: #666;
+        }
+
+        /* Category Navigation */
+        .category-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .category-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            padding: 10px 20px;
+            border: 1px solid #e5e5e5;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .category-link:hover,
+        .category-link.active {
+            color: #000;
+            border-color: #000;
+        }
+
+        /* FAQ Categories */
+        .faq-categories {
+            display: grid;
+            gap: 60px;
+            margin-bottom: 80px;
+        }
+
+        .faq-category {
+            background: white;
+            padding: 50px;
+            border-radius: 2px;
+        }
+
+        .category-title {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 40px;
+            letter-spacing: 0.5px;
+            color: #000;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .faq-list {
+            display: grid;
+            gap: 25px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 25px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .faq-question {
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            padding: 0;
+            font-size: 16px;
+            font-weight: 400;
+            color: #000;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            transition: color 0.3s ease;
+            line-height: 1.5;
+        }
+
+        .faq-question:hover {
+            color: #666;
+        }
+
+        .faq-icon {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+            margin-left: 20px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .faq-question.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.7;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding-top 0.4s ease;
+            padding-left: 0;
+        }
+
+        .faq-answer.active {
+            max-height: 300px;
+            padding-top: 10px;
+        }
+
+        .popular-section {
+            background: white;
+            padding: 60px 50px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .popular-title {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 40px;
+            letter-spacing: 0.5px;
+            color: #000;
+        }
+
+        .popular-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .popular-item {
+            padding: 25px;
+            border: 1px solid #f0f0f0;
+            transition: border-color 0.3s ease;
+        }
+
+        .popular-item:hover {
+            border-color: #ddd;
+        }
+
+        .popular-question {
+            font-size: 20px;
+            font-weight: 400;
+            color: #000;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .popular-answer {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Contact CTA */
+        .contact-cta {
+            background: #fafafa;
+            color: black;
+            padding: 60px 40px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .cta-title {
+            font-size: 28px;
+            font-weight: 300;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-subtitle {
+            font-size: 16px;
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: transparent;
+            color: black;
+            text-decoration: none;
+            border: 1px solid black;
+            border-radius: 24px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .cta-button:hover {
+            background: black;
+            color: white;
+        }
+        footer {
+            background:white;
+            color:#000000;
+            padding:1.5rem 0;
+            text-align:center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            margin-top:3rem;
+        }
+
+        .footer-logo {
+            font-size: 1.7rem;
+            font-family: "Acne Studios Circle Test Light";
+            margin-bottom: 1rem;
+        }
+
+        .social-icon {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .social-icon a {
+            color: #000000;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        .social-icon p {
+            margin-bottom: 0px;
+        }
