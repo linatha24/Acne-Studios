@@ -86,12 +86,20 @@
                 </div>
 
                 <!-- Contact Form -->
-                <div class="contact-form">
-                    <form name="contact" method="POST" data-netlify="true">
+                <section id="contact">
+                    <div class="contact-form">
+                        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+                        <!-- Hidden form name -->
                         <input type="hidden" name="form-name" value="contact" />
+                    
+                        <!-- Honeypot field (hidden from users) -->
+                        <p style="display:none">
+                            <label>Don't fill this out: <input name="bot-field" /></label>
+                        </p>
+
                         <div class="form-group">
                             <label class="form-label">Inquiry Type</label>
-                            <select class="form-select" required>
+                            <select class="form-select" name="inquiry-type" required>
                                 <option value="">Select an option</option>
                                 <option value="order">Order Support</option>
                                 <option value="product">Product Information</option>
@@ -105,34 +113,34 @@
 
                         <div class="form-group">
                             <label class="form-label">First Name</label>
-                            <input type="text" class="form-input" required>
+                            <input type="text" class="form-input" name="first-name" required>
                         </div>
 
                         <div class="form-group">
                             <label class="form-label">Last Name</label>
-                            <input type="text" class="form-input" required>
+                            <input type="text" class="form-input" name="last-name" required>
                         </div>
 
                         <div class="form-group">
                             <label class="form-label">Email Address</label>
-                            <input type="email" class="form-input" required>
+                            <input type="email" class="form-input" name="email" required>
                         </div>
 
                         <div class="form-group">
                             <label class="form-label">Order Number (if applicable)</label>
-                            <input type="text" class="form-input" placeholder="e.g., AS123456">
+                            <input type="text" class="form-input" name="order-number" placeholder="e.g., AS123456">
                         </div>
 
                         <div class="form-group">
                             <label class="form-label">Message</label>
-                            <textarea class="form-textarea" required placeholder="Please describe your inquiry in detail..."></textarea>
+                            <textarea class="form-textarea" name="message" required placeholder="Please describe your inquiry in detail..."></textarea>
                         </div>
 
                         <button type="submit" class="form-button">Send Message</button>
                     </form>
                 </div>
-            </div>
-        </section>
+                </section>
+
 
         <!-- Store Locator Section -->
         <section class="stores-section">
