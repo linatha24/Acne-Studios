@@ -21,11 +21,19 @@
                     <li><a href="shoes.html" class="nav-link">Shoes</a></li>
                     <li><a href="about-us.html" class="nav-link">About Us</a></li>
                     <li><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+                    <li class="mobile-only"><a href="login.html" class="nav-link">Login</a></li>
+                    <li class="mobile-only"><a href="cart.html" class="nav-link">Cart</a></li>
+                    <li class="mobile-only"><a href="faq.html" class="nav-link">FAQ</a></li>
                 </ul>
             <div class="nav-right">
                 <a href="login.html"><i class="ri-account-circle-line"></i></a>
                 <a href="cart.html"><i class="ri-shopping-cart-line"></i></a>
                 <a href="faq.html"><i class="ri-questionnaire-line"></i></a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -143,5 +151,28 @@
         </div>
         <p>&copy; 2025 Acne Studios. All rights reserved.</p>
     </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a nav link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
